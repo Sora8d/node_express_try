@@ -23,6 +23,6 @@ class ClientObj {
     }
 }
 
-var client: ClientObj = new ClientObj({host:"127.0.0.1", port: 5434,user:"root", password:"root", database: "postgres"})
+var client: ClientObj = new ClientObj({host:"127.0.0.1", port: 5433,user:"root", password:"root", database: "postgres"})
 
 export {client};
