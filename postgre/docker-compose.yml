@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+   pgsql:
+      build:
+         dockerfile: Dockerfile
+         context: ./pgsql
+      #restart: always
+      environment:
+         POSTGRES_USER: "root"
+         POSTGRES_PASSWORD: "root"
+      ports:
+         - '5434:5432'
+      container_name: fd_express_try
+      
