@@ -1,8 +1,6 @@
-
-import { PostgreFuncs } from './src/repository/postgreFuncs';'./src/repository/postgreFuncs';
-import express from 'express';
-var app = express();
-
+import {app} from './src/server';
+import './src/server/url_maps';
+/*
 const postgreRep = new PostgreFuncs
 
 app.get('/', (req, res) => {
@@ -17,6 +15,8 @@ app.get('/', (req, res) => {
     })
 });
 
+export {app};
+*/
 var server = app.listen("3000", function() {
     console.log('listening at ', server.address())
 })

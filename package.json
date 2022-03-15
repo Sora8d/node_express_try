@@ -18,6 +18,7 @@
   "scripts": {
     "start": "tsc --build ./ && trap 'stopping, cleaning js files' INT; node app.js; trap - INT; tsc --build --clean",
     "start-nobuild" : "node app.js",
+    "debug": "tsc --build ./ && trap 'stopping, cleaning js files' INT; node --inspect app.js; trap - INT; tsc --build --clean",
     "build": "tsc --build ./",
     "clean": "tsc --build --clean"
   }
